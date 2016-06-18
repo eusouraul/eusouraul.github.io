@@ -1,0 +1,168 @@
+<html>
+<head>
+
+<style>
+.social {
+  margin-top: 30px;
+  /*position: fixed; bottom: 5px; left: 0; 
+  text-align: center;
+  width: 100%; */
+}
+
+.fa {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.fa:not(:last-of-type) {
+  padding-right: 10px;
+}
+
+.fa:hover {
+  color: #eee;
+}
+
+body {
+  background: -webkit-linear-gradient(90deg, #0063ba 10%, #26D0CE 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #0063ba 10%, #26D0CE 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #0063ba 10%, #26D0CE 90%);
+  /* IE10 */
+  background: -o-linear-gradient(90deg, #0063ba 10%, #26D0CE 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(90deg, #0063ba 10%, #26D0CE 90%);
+  /* W3C */
+  color: #ffffff;
+  font-family: "proxima-nova-alt", Helvetica, Helmet, Freesans, sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "jaf-bernino-sans-narrow", Helvetica, Helmet, Freesans, sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+p {
+  margin: 0;
+}
+
+hr {
+  border-color: #ffffff;
+  border-top: 0;
+  opacity: 0.3;
+  width: 60%;
+}
+
+.logo {
+  max-width: 429px;
+  height: 41px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fa-rocket {
+  font-size: 6rem;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  margin-left: -180px;
+  width: 300px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+@media all and (max-width: 768px) {
+  .content {
+    height: 100vh;
+  }
+}
+@media all and (min-width: 769px), print {
+  .content {
+    top: 50%;
+    margin-top: -210px;
+  }
+}
+
+.gears {
+  height: 90px;
+  width: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+.gears:hover > .gear {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.gear {
+  -webkit-animation: barrelRoll 12s infinite linear;
+  animation: barrelRoll 12s infinite linear;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+}
+.gear:last-of-type {
+  -webkit-animation: invertBarrelRoll 8s infinite linear;
+  animation: invertBarrelRoll 8s infinite linear;
+  top: 0px;
+  left: 40px;
+}
+
+@-webkit-keyframes barrelRoll {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes invertBarrelRoll {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+</style>
+
+</head>
+<body>
+<section class="content">
+  <h1>Olá, eu sou Raul</h1>
+    
+  <div class="gears">
+    <svg class="gear" width="53px" height="52px" viewBox="0 0 53 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="gear-large" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path  fill="#ffffff" sketch:type="MSShapeGroup" d="M11.4952597,9.42618129 C10.8784344,9.94402487 10.2908558,10.4936722 9.73524446,11.0724889 L9.73524446,11.0724889 L5.65585836,10.6223129 L2.75799754,15.6415551 L4.9955566,18.624368 C4.66963891,19.5101896 4.40097533,20.4223209 4.19387925,21.3565851 L0.513554056,22.9723396 L0.513554056,28.7680612 L4.13487225,30.3145207 L4.13487225,30.3145207 C4.35728008,31.384943 4.66032021,32.4271078 5.03759377,33.4348185 L5.03759377,33.4348185 L2.78088096,36.5072608 L5.67874179,41.526503 L9.80233388,41.0292882 L9.67747825,40.8130319 C10.3271353,41.4949159 11.0209794,42.1367251 11.7546089,42.7341971 L11.3398415,46.4927204 L16.3590836,49.3905812 L19.6685975,46.9079472 L19.6685975,46.9079472 C20.3581189,47.1123951 21.0616604,47.2857755 21.7774814,47.4264026 L21.7774814,47.4264026 L23.4212086,51.1704435 L29.2169302,51.1704435 L30.8158807,47.4262081 C31.8593083,47.2211735 32.8766422,46.9465447 33.8624908,46.6075426 L36.9582056,48.881349 L41.9774477,45.9834882 L41.516294,42.158964 L41.516294,42.158964 C42.1819827,41.571633 42.8113026,40.9463132 43.4005988,40.2865439 L43.4005988,40.2865439 L47.3177924,40.7188213 L50.2156532,35.6995791 L47.8606588,32.5602171 C48.121153,31.7597711 48.3354342,30.9394718 48.5004723,30.1022537 L52.221405,28.4686715 L52.221405,22.6729499 L48.4016621,21.0417545 L48.4016621,21.3709062 L48.4016621,21.3709062 C48.2410546,20.6439805 48.0431791,19.9304345 47.8100657,19.2322344 L47.8100657,19.2322344 L50.2700206,15.8830845 L47.3721597,10.8638423 L43.2485676,11.3610571 L43.458157,11.7240765 C42.8481627,11.0357552 42.1947715,10.3845507 41.5020916,9.7744416 L41.9378125,5.82601961 L36.9185703,2.92815879 L33.7546282,5.30159207 L33.7546282,5.30159207 C32.8491443,4.99524949 31.917387,4.7431214 30.9635047,4.54922514 L30.9635047,4.54922514 L29.3089387,0.780495801 L23.513217,0.780495801 L21.9289765,4.49028518 C21.0568616,4.65558592 20.2027052,4.86944653 19.3696326,5.12884059 L16.0519233,2.69197889 L11.0326811,5.58983972 L11.4952597,9.42618129 Z M26.296186,39.6769914 C34.1119229,39.6769914 40.4478296,33.5414888 40.4478296,25.9729628 C40.4478296,18.4044369 34.1119229,12.2689343 26.296186,12.2689343 C18.4804491,12.2689343 12.1445424,18.4044369 12.1445424,25.9729628 C12.1445424,33.5414888 18.4804491,39.6769914 26.296186,39.6769914 Z"></path>
+    </g>
+</svg>
+<svg class="gear" width="40px" height="39px" viewBox="0 0 40 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M15.7338926,3.70944811 C14.4493773,4.03764662 13.2263615,4.51249329 12.0850984,5.11437556 L12.0850984,5.11437556 L8.48511672,3.71083347 L4.3873554,7.8085948 L5.71372528,11.1117733 C5.05899918,12.2008929 4.53379883,13.3720253 4.15856024,14.6053809 L0.513554056,16.2054604 L0.513554056,22.0005701 L4.1346514,23.546772 L4.1346514,23.546772 C4.48003739,24.7043007 4.95732935,25.8076292 5.5497422,26.8405034 L5.5497422,26.8405034 L4.15218892,30.4251243 L8.24995024,34.5228856 L11.9415794,33.0405359 C13.1049445,33.6687321 14.3551933,34.1641788 15.6704784,34.5057198 L17.2018772,37.9942704 L22.9969869,37.9942704 L24.5219445,34.4229255 L24.5219445,34.4229255 C25.7399147,34.0818537 26.8997479,33.6081576 27.9836827,33.0190368 L27.9836827,33.0190368 L31.757946,34.4905269 L35.8557074,30.3927656 L34.3906378,26.7441708 C34.9177564,25.8099722 35.3510665,24.8190301 35.6783045,23.7832201 L35.6783045,23.7967419 L39.4980474,22.1199567 L39.4980474,16.3248471 L35.7645496,14.7306504 L35.7645496,14.7306504 C35.4284651,13.5913939 34.9647068,12.5043029 34.3892183,11.4848167 L34.3892183,11.4848167 L35.8233487,7.80637829 L31.7255874,3.70861697 L27.9822951,5.21171168 C26.8764625,4.61082574 25.6916511,4.13006854 24.4467174,3.78770003 L22.9510478,0.380901061 L17.1553261,0.380901061 L15.7338926,3.70944811 L15.7338926,3.70944811 Z M19.9427885,29.0896892 C25.6311651,29.0896892 30.2425054,24.6242051 30.2425054,19.1157513 C30.2425054,13.6072975 25.6311651,9.14181335 19.9427885,9.14181335 C14.2544119,9.14181335 9.64307156,13.6072975 9.64307156,19.1157513 C9.64307156,24.6242051 14.2544119,29.0896892 19.9427885,29.0896892 Z" id="gear-small" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(20.005801, 19.187586) rotate(-23.000000) translate(-20.005801, -19.187586) "></path>
+    </g>
+</svg>
+  </div>
+  
+  <p>Estará no ar em breve.</p>
+  <hr />
+  <p>Você quer falar comigo?</p>
+  
+  <div class="social">
+    <a href="https://www.facebook.com/raul.victor.313" class="fa fa-facebook-square"></a>
+    <a href="https://www.behance.net/raulvic/" class="fa fa-behance-square"></a>
+    <a href="https://www.instagram.com/raul_zebit/" class="fa fa-instagram"></a>
+    <a href="https://br.linkedin.com/in/raul-victor-66876b10a" class="fa fa-linkedin-square"></a>
+  </div>
+</section> 
+</body>
+</html>
